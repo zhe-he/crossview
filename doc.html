@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crossview</title>
+	<link href="http://static.jiaju.com/jiaju/com/css/shafa/base-min.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet"/>
+	<script src="http://static.jiaju.com/jiaju/com/js/dojquery-z-min.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<style>
+		li{
+			filter:alpha(opacity=50);
+			opacity:0.5;
+			-webkit-transition: opacity 300ms;
+			-moz-transition: opacity 300ms;
+			-o-transition: opacity 300ms;
+			-ms-transition: opacity 300ms;
+			transition: opacity 300ms;
+		}
+		li.active{
+			opacity: 1;
+			filter:alpha(opacity=1);
+		}
+		.next,.pre{
+			filter:alpha(opacity=50);
+			opacity:0.5;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<br>
+	<div class="w1000-box clearfix">
+		<div class="fl left-box">
+			<div class="big-img-box">
+				<div class="img-box-center">
+					<a href="javascript:;"><img src="img/1.jpg" alt=""/></a>
+				</div>
+				<a href="javascript:;" class="left-btn"></a>
+				<a href="javascript:;" class="right-btn"></a>
+			</div>
+			<div class="small-img-box">				
+				<a href="javascript:;" _href="跳转地址" _api_href="接口地址" class="pre urlCh"><img src="img/8.jpg" _src="img/9.jpg" alt=""/></a>
+				<a href="javascript:;" class="left-btn"></a>
+				<div class="smallimg-box">
+					<ul class="clearfix">
+						<!--_src 为大图地址-->
+						<li class="active"><a href="javascript:;"><img src="img/1.jpg" _src="img/1.jpg" alt=""/></a><b></b></li>
+						<li><a href="javascript:;"><img src="img/2.jpg" _src="img/2.jpg" alt=""/></a><b></b></li>
+						<li><a href="javascript:;"><img src="img/3.jpg" _src="img/3.jpg" alt=""/></a><b></b></li> 
+						<li><a href="javascript:;"><img src="img/4.jpg" _src="img/4.jpg" alt=""/></a><b></b></li>
+						<li><a href="javascript:;"><img src="img/5.jpg" _src="img/5.jpg" alt=""/></a><b></b></li>
+						<li><a href="javascript:;"><img src="img/6.jpg" _src="img/6.jpg" alt=""/></a><b></b></li>
+						<li><a href="javascript:;"><img src="img/7.jpg" _src="img/7.jpg" alt=""/></a><b></b></li>
+					</ul>
+				</div>
+				<a href="javascript:;" class="right-btn"></a>
+				
+				<a href="javascript:;" _href="跳转地址" _api_href="接口地址" class="next urlCh"><img src="img/9.jpg" _src="img/9.jpg" alt=""/></a>
+			</div>
+		</div>	
+	</div>
+	
+	使用 see <a href="main.js">main.js</a>
+	<script type="text/javascript">
+		//布局仅供参考
+		$('.left-box').Crossview({
+			bigImg: 	'.img-box-center img',
+			smallBox: 	'.smallimg-box ul',
+			left: 	'.left-btn',
+			right: 	'.right-btn',
+			pre: 	'.pre',
+			next: 	'.next'
+		});
+	</script>
+</body>
+</html>

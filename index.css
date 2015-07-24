@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+.w1000-box{width:1000px; margin:0 auto; min-width: 1000px;}
+.w1000-box .left-box{width:764px; margin-right: 10px;}
+.left-box .left-btn , .left-box .right-btn{ background:url('img/bg_big.png') no-repeat;}
+.big-img-box{ margin:0 22px; height: 480px; width:720px; margin-bottom: 10px; position: relative; }
+.big-img-box .img-box-center{height: 480px; width:720px;text-align: center;display: table-cell;vertical-align:middle;}
+.big-img-box img{ width:720px; height:480px;}
+.big-img-box .left-btn, .big-img-box .right-btn{ width:59px; height:78px; position: absolute; top:240px; margin-top:-39px; opacity:0.6;filter:alpha(opacity=60);}
+.big-img-box .left-btn{ left:0;}
+.big-img-box .right-btn{ right:0; background-position: -59px 0;}
+.small-img-box{ background:#505050; height:64px; padding:18px 10px; position: relative;}
+.small-img-box img{width:95px; height:64px;}
+.small-img-box a{margin-right: 5px; float: left;}
+.small-img-box .smallimg-box{width:500px; float:left; display: inline; height:100%; position: relative; overflow: hidden; padding-top:4px; margin-top: -4px;}
+
+.small-img-box .left-btn, .small-img-box .right-btn{ width:16px; height:49px;margin-top:10px;}
+.small-img-box .left-btn{ background-position: 0 -78px; }
+.small-img-box .right-btn{ background-position: -16px -78px;}
+.small-img-box .smallimg-box ul{ position: absolute;left:0; top:4px;}
+.small-img-box .smallimg-box li{ float:left; width:95px; height:64px; margin-right:5px; position: relative;}
+.smallimg-box li b{ position: absolute;right: 0;bottom:0; z-index:9;color:#fff;}
+.smallimg-box a.active{ background:url('img/bg_big.png') no-repeat -118px 0;opacity:0.6;filter:alpha(opacity=60); width:95px; height:74px; position: absolute; z-index:10;top:0; left:0;}
+
+.w1000-box .right-box{ width:226px;}
+.w1000-box .right-box .hCell{width: 492px; height: 430px;}
+.w1000-box .right-box .hhotCell6{height: 37px; padding:12px 10px; background:#ff5a55; color:#fff; font-size: 14px;}
+.w1000-box .right-box .hhotTitle{font-size: 22px; line-height: 24px; }
+.w1000-box .right-box .information{border: 1px solid #ccc; border-top: none; padding: 26px 22px 0 25px;}
+.information .informationImg{width: 213px; height: 178px; border: 1px solid #ccc;}
+.information .informationImg img{width: 100%; height: 100%;}
+.information .informationCon{width: 210px;}
+.information .informationCon h5{font-size: 14px; line-height: 20px; margin-top: 30px; margin-bottom: 7px;}
+.information .informationCon p{height: 72px; overflow: hidden;}
+.w1000-box .right-box .informationNav{padding: 25px 0 18px; height: 117px; width: 100%;}
+.w1000-box .right-box .informationNav li{height: 29px; line-height: 29px; background:url(http://static.jiaju.com/jiaju/com/images/shafa/shafaA.png) no-repeat -670px -337px; text-indent: 7px; margin-left: -3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.w1000-box .right-box .informationNav li.fl{width: 55%;}
+.w1000-box .right-box .informationNav li.fr{width: 45%;}
+.hbaoming{ padding:0 10px; padding-top:18px; border:1px solid #ccc; border-top: none; border-bottom:2px solid #ccc; margin-bottom: 10px;}
+.hbaoming .baomingcell{height: 28px; line-height: 28px; margin-bottom: 16px; color: #969696;}
+.hbaoming .cellA{width: 135px; text-align: right;}
+.hbaoming .cellB{position: relative;}
+.hbaoming .cellB input{width: 170px; border: 1px solid #ccc; padding: 7px 8px 7px; height: 12px; line-height: 12px; color: #969696;}
+.hbaoming .cellB .star{position: absolute; top: 4px; right: 0px; width: 12px; height: 19px; background:url(http://static.jiaju.com/jiaju/com/images/shafa/shafaA.png) no-repeat -670px -400px;}
+
+.hbaoming .cellB select{width: 188px; height: 28px; border: 1px solid #ccc; color: #969696; outline: none;}
+.hbaoming .cellB .sec1{width: 60px;}
+
+.hbaoming .baomingcell1{height: 44px;}
+.hbaoming .baomingbtn{display: block; width: 100%; height: 44px; line-height: 44px; background:#ff5a55; font-size: 18px; text-align: center; color: #fff; border-radius:6px;}
+.hbaoming .baomingbtn:hover{text-decoration: none;}
+.hbaoming .baomingren{text-align: center;}
+.hbaoming .baomingren strong{font-size: 18px;}
